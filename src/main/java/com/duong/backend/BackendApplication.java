@@ -9,7 +9,7 @@ import org.springframework.boot.context.properties.EnableConfigurationProperties
 import javax.sql.DataSource;
 
 @EnableConfigurationProperties(RsaKeyProperties.class)
-@SpringBootApplication(exclude = {DataSourceAutoConfiguration.class })
+@SpringBootApplication()
 public class BackendApplication {
 
 	public static void main(String[] args) {

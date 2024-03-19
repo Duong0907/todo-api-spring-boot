@@ -11,10 +11,11 @@ import java.util.List;
 @RestController
 public class WelcomeController {
     @GetMapping("/welcome")
-    public ResponseEntity<List<String>> welcome(Principal principal) {
-        return ResponseEntity.ok(Arrays.asList(
-                "Hello",
-                principal.getName()
+    public ResponseEntity<Response> welcome(Principal principal) {
+        return ResponseEntity.ok(new Response(
+                "Welcome to my website",
+                false,
+                null
         ));
     }
 }
