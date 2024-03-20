@@ -1,6 +1,5 @@
 package com.duong.backend.configs;
 
-import com.duong.backend.services.JwtService;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;

@@ -1,4 +1,4 @@
-package com.duong.backend.models;
+package com.duong.backend.users;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

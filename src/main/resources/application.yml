@@ -16,7 +16,3 @@ spring:
         format_sql: true
     database: postgresql
     database-platform: org.hibernate.dialect.PostgreSQLDialect
-
-rsa:
-  private-key: classpath:certs/private.pem
-  public-key: classpath:certs/public.pem

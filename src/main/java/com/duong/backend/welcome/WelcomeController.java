@@ -1,12 +1,11 @@
-package com.duong.backend.controllers;
+package com.duong.backend.welcome;
 
+import com.duong.backend.responses.Response;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.security.Principal;
-import java.util.Arrays;
-import java.util.List;
 
 @RestController
 public class WelcomeController {

@@ -1,6 +1,6 @@
-package com.duong.backend.controllers;
+package com.duong.backend.auth;
 
-import com.duong.backend.services.AuthenticationService;
+import com.duong.backend.responses.Response;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;

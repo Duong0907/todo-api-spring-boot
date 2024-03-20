@@ -1,11 +1,10 @@
-package com.duong.backend.services;
+package com.duong.backend.auth;
 
-import com.duong.backend.controllers.AuthenticationRequest;
-import com.duong.backend.controllers.RegisterRequest;
-import com.duong.backend.controllers.Response;
-import com.duong.backend.models.Role;
-import com.duong.backend.models.User;
-import com.duong.backend.repositories.UserRepository;
+import com.duong.backend.responses.Response;
+import com.duong.backend.users.Role;
+import com.duong.backend.users.User;
+import com.duong.backend.users.UserRepository;
+import com.duong.backend.configs.JwtService;
 import lombok.RequiredArgsConstructor;
 import org.jetbrains.annotations.NotNull;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -53,7 +52,7 @@ public class AuthenticationService {
         return new Response(
                 "Login successfully",
                 false,
-                new HashMap<String, Object>() {{
+                new HashMap<>() {{
                     put("access_token", jwtToken);
                 }}
         );

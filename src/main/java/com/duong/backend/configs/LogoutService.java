@@ -1,4 +1,4 @@
-package com.duong.backend.services;
+package com.duong.backend.configs;
 
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
@@ -16,6 +16,6 @@ public class LogoutService implements LogoutHandler {
             HttpServletResponse response,
             Authentication authentication
     ) {
-
+        // TODO
     }
 }

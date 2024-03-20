@@ -1,6 +1,5 @@
-package com.duong.backend.repositories;
+package com.duong.backend.users;
 
-import com.duong.backend.models.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

@@ -1,4 +1,4 @@
-package com.duong.backend.controllers;
+package com.duong.backend.auth;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

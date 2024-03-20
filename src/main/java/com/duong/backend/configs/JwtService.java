@@ -1,4 +1,4 @@
-package com.duong.backend.services;
+package com.duong.backend.configs;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
