@@ -1,5 +1,6 @@
 package com.duong.backend.users;
 
+import com.duong.backend.todos.Todo;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -11,6 +12,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 
 import java.util.Collection;
 import java.util.List;
+import java.util.Set;
 
 @Data
 @Builder
@@ -28,6 +30,9 @@ public class User implements UserDetails {
     private String password;
     @Enumerated(EnumType.STRING)
     private Role role;
+
+    @OneToMany(mappedBy = "user")
+    private Set<Todo> todos;
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
